@@ -1,0 +1,253 @@
+/* Streamlit Custom CSS */
+
+/* Global Styles */
+
+
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://img.icons8.com/comic/300/super-mario.png");
+
+    background-repeat: repeat;
+    background-size: 100px 100px;
+   
+}
+
+/* Header Styles */
+.main-header {
+    text-align: center;
+    padding: 2rem 0;
+    color: #ffffff;
+} 
+
+.main-header h1 {
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* General text sty les */
+p, span, div, label, h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+/* Streamlit specific text styles */
+.stText, .stMarkdown, .stSelectbox, .stTextInput, .stButton {
+    color: #5a5959 !important;
+}
+
+/* Input and button text */
+input, select, textarea, button {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Metric and badges */
+.stMetric, .stBadge {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #333333;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    margin: 1rem 0 2rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    
+}
+
+.navbar-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .navbar-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.main-header h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
+
+/* Card Styles */
+.game-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+/* Game Title */
+.game-title {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Badge Styles */
+.stBadge {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    margin: 0.25rem;
+}
+
+/* Button Styles */
+.stButton > button {
+    background:  #0824c1;
+    color: rgb(241, 239, 239);
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 7rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Input Styles */
+.stTextInput > div > div > input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Selectbox Styles */
+.stSelectbox > div > div > select {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem;
+}
+
+/* Metric Styles */
+.stMetric {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Image Styles */
+.stImage > img {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.stImage > img:hover {
+    transform: scale(1.05);
+}
+
+/* Expander Styles */
+.stExpander {
+    background: rgba(119, 185, 218, 0.9);
+    border-radius: 10px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+/* Sidebar Styles */
+.css-1d391kg {
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+/* Success/Error Messages */
+.stSuccess {
+    background: linear-gradient(45deg, #00b09b, #96c93d);
+    border-radius: 10px;
+}
+
+.stError {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    border-radius: 10px;
+}
+
+/* Loading Animation */
+.stSpinner > div {
+    border-color: #667eea;
+    border-top-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .game-card {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+}

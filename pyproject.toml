@@ -6,10 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "APIGamings"
 version = "1.0.0"
 description = "Streamlit app for searching free games"
-authors = [{name = "Camila"}]
+authors = [{name = "Camile"}]
 requires-python = ">=3.8"
 
 dependencies = [
-    "requests>=2.25.0",
-    "streamlit>=1.20.0",
+    "requests>=2.25.0", # HTTP requests
+    "streamlit>=1.20.0", # Streamlit framework
+    "python-dotenv>=1.0.0", # Environment variables
 ]

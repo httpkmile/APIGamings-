@@ -64,6 +64,9 @@ logs/
 config.json
 secrets.json
 
+# Environment example files
+.env.example
+
 # Node modules (if any)
 node_modules/
 npm-debug.log*
